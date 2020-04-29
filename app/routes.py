@@ -23,6 +23,16 @@ def index():
     return render_template('index.html', title='Home', posts=posts)
 
 
+@app.route('/samples')
+def samples():
+    return render_template('samples.html', title='Samples')
+
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html', title='Blog')
+
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
