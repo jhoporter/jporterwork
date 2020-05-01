@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #333;
 }
 
 .responsive {
@@ -29,7 +30,7 @@ body {
 
 .bannernote {
   position: absolute;
-  top: 60%;
+  top: 50%;
   margin: auto;
   font-size: 550%;
   color: white;
@@ -53,7 +54,10 @@ body {
   width: 45%;
   text-align: center;
   margin: auto;
-  font-size: 175%;
+  font-size: 200%;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-family: 'Anton', sans-serif;
 }
 
 
@@ -126,15 +130,17 @@ body {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
+  .topnav-left {display:none;}
   .topnav a.icon {
     margin-top: 10px;
-    float: right;
+    right: 0;
+    position: fixed;
     display: block;
 }
 
 .bannernote {
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 3%;
   margin: auto;
   font-size: 550%;
@@ -150,7 +156,7 @@ body {
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: absolute;}
   .topnav.responsive a.icon {
-    position: absolute;
+    position: fixed;
     right: 0;
   }
   .topnav.responsive a {
