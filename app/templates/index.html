@@ -1,18 +1,20 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <div>
-        <h1>Jho Porter Writes</h1>
-        I write, you sit back and relax.
+<div class="banner">
+  <img src="/static/ban1d.jpg" class="bgimage">
+    <div class="bannernote">
+      I write, you sit back and relax.
+    </div>
+
+
+
 </div>
 
-<div>
+<div class="summary">
+  <div class="profsum">
         Professional Summary
+  </div>
 
 </div>
-
-        {% for post in posts %}
-        <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-        {% endfor %}
-
 {% endblock %}

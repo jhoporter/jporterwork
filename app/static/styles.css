@@ -2,18 +2,88 @@ body {
   margin: 0;
 }
 
+.responsive {
+  width: 100%;
+  margin: auto;
+}
+
+/* Banner */
+.banner {
+  height: 120%;
+  background-color: #6B6D76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bgimage {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.18;
+}
+
+
+.bannernote {
+  position: absolute;
+  top: 60%;
+  margin: auto;
+  font-size: 550%;
+  color: white;
+  opacity: 0.8;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+/* Summary */
+
+.summary {
+  height: 88%;
+  background-color: #333;
+  color: white;
+}
+
+.profsum {
+  padding-top: 4%;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  font-size: 175%;
+}
+
+
+
+/* NAVIGATION %/
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .topnav-right {
   float: right;
   padding-right: 40px;
+  padding-top: 5px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Anton', sans-serif;
+}
+
+.topnav-left {
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 250%;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-family: 'Anton', sans-serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -50,9 +120,24 @@ body {
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
+    margin-top: 10px;
     float: right;
     display: block;
 }
+
+.bannernote {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  margin: auto;
+  font-size: 550%;
+  color: white;
+  opacity: 0.8;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-family: 'Dancing Script', cursive;
+}
+
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
@@ -66,6 +151,7 @@ body {
     display: block;
     text-align: left;
     position: relative;
-    right: 50px;
+    right: 120%;
+
   }
 }

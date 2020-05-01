@@ -3,6 +3,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="/static/styles.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
       {% if title %}
       <title>{{ title }} - Microblog</title>
@@ -17,6 +19,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
+        <div class="topnav-left">JHO PORTER WRITES</div>
         <div class="topnav-right">
           <a href="{{ url_for('index') }}">Home</a>
           <a href="{{ url_for('samples') }}">Samples</a>
