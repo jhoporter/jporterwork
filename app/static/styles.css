@@ -1,12 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   background-color: #333;
 }
 
-.responsive {
-  width: 100%;
-  margin: auto;
-}
+
+
+
 
 /* Banner */
 .banner {
@@ -21,6 +25,8 @@ body {
 
 
 .bgimage {
+  position: fixed;
+  top: 0;
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
@@ -41,24 +47,131 @@ body {
 }
 
 
-/* Summary */
+/* Portfolio */
 
-.summary {
-  height: 88%;
-  background-color: #333;
+.portfolio {
+  position: relative;
+  background-color: black;
   color: white;
+  height: 130px;
 }
 
-.profsum {
-  padding-top: 4%;
+.portfolio-text {
+  padding-top: 29px;
   width: 45%;
   text-align: center;
   margin: auto;
-  font-size: 200%;
+  font-size: 350%;
   opacity: 0.8;
   letter-spacing: 2px;
   font-family: 'Anton', sans-serif;
+}* {
+  margin: 0;
+  padding: 0;
 }
+
+/* SAMPLES */
+
+.sample {
+  position: relative;
+  display: flex;
+  height: 85%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.sample > div {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.sampleimage {
+  height: 100%;
+  width: 120%;
+}
+
+
+.sample-text {
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  height: 85%;
+
+}
+
+.p {
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+}
+
+.readmore {
+  position: relative;
+  top: 25px;
+}
+
+.viewmore {
+  position: relative;
+  top: 80px;
+  color: pink;
+  font-weight: bold;
+}
+
+
+.readmore a {
+  text-decoration: none !important;
+  color: pink;
+}
+
+.readmore a:hover {
+  font-size: 130%;
+}
+
+.readmore a:visited {
+  text-decoration: none;
+  color: pink;
+}
+
+.readmore  a.active {
+  text-decoration: none;
+  color: pink;
+}
+
+.viewmore a {
+  text-decoration: none !important;
+  color: pink;
+}
+
+.viewmore a:hover {
+  font-size: 130%;
+}
+
+.viewmore a:visited {
+  text-decoration: none;
+  color: pink;
+}
+
+.viewmore  a.active {
+  text-decoration: none;
+  color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
