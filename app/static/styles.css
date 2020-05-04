@@ -8,45 +8,12 @@ body {
   background-color: #FAFAFA;
 }
 
-/* CONTACT-INDEX */
-.contact-index {
-  position: relative;
-  background-color: #FAFAFA;
-  z-index: 1;
-  height: 70%;
-}
-
-
-.sample2 {
+.contact {
   padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
-  display: flex;
+  background-color: #ddd;
   height: 50%;
-  width: 100%;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #FAFAFA;
 }
-
-
-.section2-a {
-  width: 50%;
-  margin: 10px;
-  padding: 0;
-  height: 100%;
-  background-color: #FAFAFA;
-}
-
-
-.section2-b {
-  width: 50%;
-  margin: 10px;
-  padding: 0;
-  height: 100%;
-  background-color: #FAFAFA;
-}
-
-
 
 /* Banner */
 .banner {
