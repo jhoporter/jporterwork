@@ -2,6 +2,6 @@ venv/**
 __pycache__/**
 *.pyc
 *.db
-static/*.jpg
-static/*.jpeg
-static/*.png
+app/static/*.jpg
+app/static/*.jpeg
+app/static/*.png
