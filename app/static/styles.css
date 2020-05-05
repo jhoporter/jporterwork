@@ -24,6 +24,8 @@ body {
   font-size: 200%;
   letter-spacing: 2px;
   font-family: 'Anton', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
 
 }
 
@@ -32,26 +34,18 @@ body {
   padding: 15px;
   width: 50%;
   height: 100%;
-}
-
-.email {
-
-}
-
-.contact-form {
   padding-bottom: 20px;
 }
 
-.form-input {
-  padding-bottom: 20px;
+.form-group {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.form-input :focus {
+input[type=text], textarea :focus {
   border: none;
   outline: none;
-
 }
-
 
 input[type=text], textarea{
   width: 100%;
@@ -60,6 +54,7 @@ input[type=text], textarea{
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -77,12 +72,6 @@ input[type=submit] {
   width: 100%;
   margin: 0 auto;
 }
-
-
-
-
-
-
 
 
 
@@ -315,6 +304,9 @@ input[type=submit] {
   .sample, .a {
     100%;
     margin: 0 auto;
+  }
+  .email {
+    display: none;
   }
 }
 
