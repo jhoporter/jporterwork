@@ -5,13 +5,38 @@
 
 body {
   margin: 0;
-  background-color: #FAFAFA;
 }
+
+.white {
+  background-color: white;
+  height: auto;
+
+}
+
+.samples {
+  height: 65px;
+  background-color: #333;
+  font-size: 300%;
+  position: relative;
+}
+
+
+
+.bgimage {
+  position: fixed;
+  top: 0;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.18;
+}
+
 
 /* Contact Form */
 
 .contact-index {
   padding-top: 20px;
+  padding-bottom: 40px;
   position: relative;
   background-color: none;
   height: 70%;
@@ -104,7 +129,6 @@ input[type=submit] {
 .copyright {
   position: relative;
   padding-top: 20px;
-  margin-top: 40px;
   text-align: center;
   padding-bottom: 20px;
   background: #333;
@@ -369,7 +393,7 @@ input[type=submit] {
 /* NAVIGATION LAYOUT.HTML %/
 
 /* Add a black background color to the top navigation */
-.topnav {
+.topnav, .topnav2 {
   top: 0;
   left: 0;
   width: 100%;
@@ -379,6 +403,14 @@ input[type=submit] {
   z-index: 2;
   color: white;
 }
+
+.topnav2 {
+  background-color: #333 !important;
+  color: #FAFAFA !important;
+  height: 10%;
+
+}
+
 
 .topnav-right {
   float: right;
@@ -403,7 +435,7 @@ input[type=submit] {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a, .topnav2 a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -414,19 +446,19 @@ input[type=submit] {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover, .topnav2 a:hover {
   background-color: white;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+.topnav a.active, .topnav2 a.active {
   background-color: #4CAF50;
   color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.topnav .icon, .topnav2 .icon {
   display: none;
 }
 
@@ -435,9 +467,9 @@ input[type=submit] {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a {display: none;}
+  .topnav a, .topnav2 a {display: none;}
   .topnav-left {font-size: 200%; margin-top: 8px;}
-  .topnav a.icon {
+  .topnav a.icon, .topnav2 a.icon {
     margin-top: 10px;
     right: 0;
     position: fixed;
@@ -448,17 +480,17 @@ input[type=submit] {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
+  .topnav.responsive, .topnav2.responsive {
     position: fixed;
     background-color: gray;
     opacity: 0.9;
     color: black;
   }
-  .topnav.responsive a.icon {
+  .topnav.responsive a.icon, .topnav2.responsive a.icon {
     position: fixed;
     right: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive a, .topnav2.responsive a {
     top: 0;
     float: none;
     display: block;
