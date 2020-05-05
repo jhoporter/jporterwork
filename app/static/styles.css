@@ -38,7 +38,7 @@ body {
 }
 
 .form-group {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -48,13 +48,16 @@ input[type=text], textarea :focus {
 }
 
 input[type=text], textarea{
+  height: 9%;
   width: 100%;
   padding: 12px;
-  border: none;
+  border: 2px solid #333;
+  opacity: 0.8;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
   margin-bottom: 15px;
+  font-family: 'Anton', sans-serif;
 }
 
 textarea {
@@ -71,6 +74,8 @@ input[type=submit] {
   cursor: pointer;
   width: 100%;
   margin: 0 auto;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 30px;
 }
 
 
