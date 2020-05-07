@@ -24,9 +24,33 @@ body {
 }
 
 /* Contact Page */
-.contact-page {
-  width: 70%;
+.contact-container {
+  position: relative;
+  top: 5%;
+  width: 90%;
+  height: 85%;
+  margin: 0 auto;
 }
+
+.contact-page {
+  width: 50%;
+  height: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+  opacity: 1 !important;
+}
+
+.contact-bg {
+  position: relative;
+  padding-top: 3%;
+  background-color: pink;
+  padding-bottom: 0;
+  margin: 0;
+  height: 78%;
+}
+
+
 
 /* Samples Page */
 .navbackground {
@@ -84,6 +108,10 @@ body {
   margin-bottom: 20px;
   text-align: left;
 
+}
+
+#contact2 {
+  font-size: 100%;
 }
 
 
@@ -387,6 +415,14 @@ input[type=submit] {
   }
   .contact-text {
     text-align: center;
+  }
+  .contact-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-page {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
