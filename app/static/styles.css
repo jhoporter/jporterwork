@@ -52,7 +52,7 @@ body {
 
 /* Samples Page */
 .navbackground {
-  height: 65px;
+  height: 60px;
   background-color: #333;
   font-size: 300%;
   position: relative;
@@ -210,6 +210,8 @@ input[type=submit] {
 
 
 .bannernote {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   position: absolute;
   text-align: center;
   padding: 18px;
@@ -227,9 +229,19 @@ input[type=submit] {
   letter-spacing: 0;
   word-spacing: 4px;
   font-family: 'Jost', sans-serif;
-
-
 }
+
+#desc {
+  display: none;
+  font-size: 35% !important;
+  font-weight: normal;
+  letter-spacing: 0;
+  word-spacing: 4px;
+  font-family: 'Jost', sans-serif;
+  padding-bottom: 18px;
+}
+
+
 
 /* Portfolio */
 
@@ -404,9 +416,6 @@ input[type=submit] {
     font-size: 300% !important;
     color: white;
     opacity: 0.8;
-    font-style: italic;
-    letter-spacing: 2px;
-    font-family: 'Dancing Script', cursive;
   }
 }
 
@@ -416,7 +425,7 @@ input[type=submit] {
     height: 100%;
   }
   .bannernote {
-    font-size: 300% !important;
+    font-size: 350% !important;
   }
   .bgimage {
     width: 96%;
@@ -449,6 +458,13 @@ input[type=submit] {
     width: 75%;
     margin: 0 auto;
   }
+  #description {
+    display: none;
+  }
+  #desc {
+    display: block;
+  }
+
 }
 
 
@@ -464,7 +480,7 @@ input[type=submit] {
 /* NAVIGATION LAYOUT.HTML %/
 
 /* Add a black background color to the top navigation */
-.topnav, .topnav2 {
+.topnav {
   top: 0;
   left: 0;
   width: 100%;
@@ -475,21 +491,14 @@ input[type=submit] {
   color: white;
 }
 
-.topnav2 {
-  background-color: #333 !important;
-  color: #FAFAFA !important;
-  height: 10%;
-
-}
-
 
 .topnav-right {
   float: right;
   padding-right: 40px;
   padding-top: 5px;
-
   letter-spacing: 2px;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
 }
 
 .topnav-left {
@@ -507,7 +516,7 @@ input[type=submit] {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a, .topnav2 a {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -519,19 +528,19 @@ input[type=submit] {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover, .topnav2 a:hover {
+.topnav a:hover {
   background-color: white;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active, .topnav2 a.active {
+.topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon, .topnav2 .icon {
+.topnav .icon {
   display: none;
 }
 
@@ -540,9 +549,9 @@ input[type=submit] {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {
-  .topnav a, .topnav2 a {display: none;}
+  .topnav a {display: none;}
   .topnav-left {font-size: 200%; margin-top: 8px;}
-  .topnav a.icon, .topnav2 a.icon {
+  .topnav a.icon {
     margin-top: 10px;
     right: 0;
     position: fixed;
@@ -553,17 +562,17 @@ input[type=submit] {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 750px) {
-  .topnav.responsive, .topnav2.responsive {
+  .topnav.responsive {
     position: fixed;
     background-color: gray;
     opacity: 0.9;
     color: black;
   }
-  .topnav.responsive a.icon, .topnav2.responsive a.icon {
+  .topnav.responsive a.icon {
     position: fixed;
     right: 0;
   }
-  .topnav.responsive a, .topnav2.responsive a {
+  .topnav.responsive a {
     top: 0;
     float: none;
     display: block;
