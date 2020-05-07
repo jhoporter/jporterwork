@@ -1,12 +1,31 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="contact-bg">
-  <div class="contact-container">
-    <div class="contact-page contact-text">
-        Contact Me
-        {% include 'contact-form.html' %}
+<div class="contact-container">
+<div class="contact-index">
+  <div class="summary">
+    <div>
+      <div>
+        <p class="bigger">Email</p>
+        <p>jmporterwork@gmail.com</p>
+      </div>
+      <div>
+        <p class="bigger">Skills</p>
+        <p>8 years writing experience</p>
+        <p>SEO | CMS | WordPress</p>
+        <p>Research | Web Development</p>
+        <p>Web Content | Blog Posts</p>
+        <p>Long-form | Press Release</p>
+        <p>Entertainment | Reviews</p>
+        <p>Copywriting | Ghostwriting</p>
+      </div>
     </div>
   </div>
+
+  <div class="contact-form" id="contact">
+    <div class="contact-text">Contact Me</div>
+    <div class="form-group">{% include 'contact-form.html' %}</div>
+  </div>
+</div>
 </div>
 {% endblock %}

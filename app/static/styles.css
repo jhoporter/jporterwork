@@ -32,15 +32,6 @@ body {
   margin: 0 auto;
 }
 
-.contact-page {
-  width: 50%;
-  height: 90%;
-  margin: 0 auto;
-  text-align: center;
-  color: #333;
-  opacity: 1 !important;
-}
-
 .contact-bg {
   position: relative;
   padding-top: 3%;
@@ -128,10 +119,11 @@ body {
 
 }
 
-input[type=text], textarea :focus {
-  border: none;
+input[type=text], textarea:focus {
   outline: none;
 }
+
+
 
 input[type=text], textarea{
   height: 9%;
@@ -361,6 +353,12 @@ input[type=submit] {
   }
 }
 
+
+@media screen and (max-width: 650px) {
+  .summary {
+    font-size: 150% !important;
+  }
+}
 
 
 
