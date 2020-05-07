@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<div class="contact-page">
     <h1>Contact</h1>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
@@ -43,4 +44,5 @@
 
         <p>{{ form.submit() }}</p>
     </form>
+  </div>
 {% endblock %}

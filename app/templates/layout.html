@@ -26,7 +26,7 @@
           <a href="{{ url_for('index') }}">Home</a>
           <a href="{{ url_for('samples') }}">Samples</a>
           <a href="{{ url_for('blog') }}">Blog</a>
-          <a href="#contact2">Contact</a>
+          <a href="{{ url_for('contact')}}">Contact</a>
         </div>
 
       </div>
@@ -43,7 +43,7 @@
         {% endwith %}
 
 
-
+        <div class="navbackground"></div>
         {% block content %}{% endblock %}
 
         <footer>
