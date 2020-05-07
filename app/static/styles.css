@@ -13,7 +13,6 @@ body {
 
 }
 
-
 .bgimage {
   position: fixed;
   top: 0;
@@ -23,6 +22,9 @@ body {
   opacity: 0.18;
 }
 
+
+
+
 /* Contact Page */
 .contact-container {
   position: relative;
@@ -30,6 +32,10 @@ body {
   width: 90%;
   height: 85%;
   margin: 0 auto;
+}
+
+#black {
+  color: black;
 }
 
 .contact-bg {
@@ -49,6 +55,16 @@ body {
   background-color: #333;
   font-size: 300%;
   position: relative;
+}
+
+.samplepagetext {
+  font-size: 240%;
+  color: black;
+  text-align: center;
+  padding-top: 3%;
+  background-color: #FAFAFA;
+  font-family: 'Anton', sans-serif;
+  opacity: 0.8;
 }
 
 
@@ -510,7 +526,7 @@ input[type=submit] {
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a, .topnav2 a {display: none;}
   .topnav-left {font-size: 200%; margin-top: 8px;}
   .topnav a.icon, .topnav2 a.icon {
@@ -523,7 +539,7 @@ input[type=submit] {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive, .topnav2.responsive {
     position: fixed;
     background-color: gray;
