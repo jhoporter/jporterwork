@@ -43,24 +43,29 @@ body {
   display: flex;
 }
 
-.email {
+.summary {
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Anton', sans-serif;
   font-weight: 200 !important;
   color: #333;
-  opacity: 0.8;
   font-size: 200%;
 }
 
-.email > div {
-  margin-top: 100px;
-  padding-bottom: 14%;
-  font-size: 50% !important;
+.bigger {
+  font-size: 150% !important;
+  font-weight: bold;
 }
 
-.email > div > div {
-  margin-bottom: 10px;
+
+.summary > div {
+  margin-top: 80px;
+  padding-bottom: 14%;
+  font-size: 60% !important;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.summary > div > div {
+  margin-bottom: 50px;
   margin-top: 20px;
 }
 
@@ -369,7 +374,7 @@ input[type=submit] {
     100%;
     margin: 0 auto;
   }
-  .email {
+  .summary {
     display: none;
   }
   .form-group {
