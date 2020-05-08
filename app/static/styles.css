@@ -280,7 +280,7 @@ input[type=submit] {
   padding-bottom: 20px;
   position: relative;
   display: flex;
-  height: 85%;
+  height: 100%;
   font-family: 'Quicksand', sans-serif;
   background-color: #FAFAFA;
 }
@@ -322,6 +322,11 @@ input[type=submit] {
   font-weight: bold;
 }
 
+.categories {
+  margin-bottom: 12px;
+  color: #DB7093;
+  font-weight: bold;
+}
 
 .readmore a {
   text-decoration: none !important;
