@@ -34,7 +34,16 @@ ul {
 
 }
 
+.abc {
+  background-color: #FAFAFA;
+  margin-left: 50px;
+  font-family: 'Jost', sans-serif;
+  border: 1px solid black;
+}
 
+.red {
+  color: red;
+}
 
 
 /* Contact Page */
