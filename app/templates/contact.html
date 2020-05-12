@@ -1,12 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
+
+
+
 <div class="contact-container">
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>
+      {% for message in messages %}
+      <li class="flashed">{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+
 <div class="contact-index">
   <div class="summary">
     <div>
       <div>
         <p class="bigger">Email</p>
-        <p>jmporterwork@gmail.com</p>
+        <p>jhoporter@gmail.com</p>
       </div>
       <div>
         <p class="bigger">Skills</p>

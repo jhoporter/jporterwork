@@ -23,6 +23,17 @@ body {
   opacity: 0.18;
 }
 
+ul {
+  list-style: none;
+}
+.flashed {
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Jost', sans-serif;
+  color: red;
+
+}
+
 
 
 

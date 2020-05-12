@@ -21,12 +21,13 @@ def index():
         text = "Type:" + " " + article_type + " \n" + "Word count: " + word_count + " \n" + "Message: " + message
         send = 'Subject: {}\n\n{}'.format(subject, text)
         server = smtplib.SMTP("smtp.gmail.com", 587)
-        recipient = "jmporterwork@gmail.com"
+        recipient = "jhoporter@gmail.com"
+        sender = "jhoporter@gmail.com"
         server.starttls()
-        server.login("jmporterwork@gmail.com", "cy(5U((jj,r@RPMr%(CZ")
-        server.sendmail("jmporter@gmail.com", recipient, send)
+        server.login(sender, "Q1Hw4EJnXq2btp3q6Vfp")
+        server.sendmail(sender, recipient, send)
         flash('Message sent!')
-        return redirect(url_for('index'))
+        return redirect("/index#contact")
     return render_template('index.html', title='Home', form=form)
 
 
@@ -53,10 +54,11 @@ def contact():
         text = "Type:" + " " + article_type + " \n" + "Word count: " + word_count + " \n" + "Message: " + message
         send = 'Subject: {}\n\n{}'.format(subject, text)
         server = smtplib.SMTP("smtp.gmail.com", 587)
-        recipient = "jmporterwork@gmail.com"
+        recipient = "jhoporter@gmail.com"
+        sender = "jhoporter@gmail.com"
         server.starttls()
-        server.login("jmporterwork@gmail.com", "cy(5U((jj,r@RPMr%(CZ")
-        server.sendmail("jmporter@gmail.com", recipient, send)
+        server.login(sender, "Q1Hw4EJnXq2btp3q6Vfp")
+        server.sendmail(sender, recipient, send)
         flash('Message sent!')
         return redirect(url_for('contact'))
     return render_template('contact.html', title='Contact', form=form)
