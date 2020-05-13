@@ -43,7 +43,7 @@ def blog():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    form = ContactForm(
+    form = ContactForm()
     if form.validate_on_submit():
         name = form.name.data
         email = form.email.data

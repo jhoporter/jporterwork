@@ -1,1 +1,79 @@
-blog
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/static/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+
+
+      {% if title %}
+      <title>{{ title }} - JHOPORTERWRITES</title>
+      {% else %}
+      <title>Welcome to JHOPORTERWRITES</title>
+      {% endif %}
+    </head>
+
+
+    <body>
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="topnav-left">Jho Porter Writes</div>
+        <div class="topnav-right">
+          <a href="{{ url_for('blog') }}">Home</a>
+        </div>
+
+      </div>
+
+
+        <div class="banner">
+          <img src="/static/ban1d.jpg" class="bgimage">
+            <div class="bannernote">
+              <div>Jho Porter Blog</div>
+              <div id="description">
+                Thoughts, Facts And Other Stuff
+              </div>
+              <div id="desc">
+                <p>Thoughts</p>
+                <p>Facts</p>
+                <p>And Other Stuff</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="portfolio">
+          <div class="portfolio-text">
+                Blog
+          </div>
+        </div>
+
+
+        
+
+
+
+        <footer>
+          <div class="copyright">
+              © 2020 by Jho Porter
+          </div>
+        </footer>
+
+
+        <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+        </script>
+
+    </body>
+</html>
