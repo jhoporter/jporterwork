@@ -1,50 +1,50 @@
+<div class="blog-container">
+  <div class="blog-box">
+    <div class="blog-image-box"><img src="/static/nicoleandazan.jpg" class="blog-image" alt="Nicole and Azan"></div>
+    <div class="blog-description-box">
+      <div class="blog-description">
 
-<div class="flex">
-  <div class="sample">
-    <div class="a">
-      <div class="imagecontainer"><img src="static/nicoleandazan.jpg" width="300"></div>
-      <div class="sample-text">
-        <div><h2>90 Day Fiancé's Most Lively Couples: Where Are They Now?</h2></div>
-
-        <div class="p">
-
-          <div class="categories">Category: Entertainment</div>
-
-          <p>Ah, 90 Day Fiancé—the dumpster fire of a show that keeps fans wanting for more. With Season 7 being delayed due to the recent United States federal government shutdown, fans are at their wits’ end. Fortunately, we have 90 Day Fiancé: What Now? and 90 Day Fiancé: Happily Ever After?...</p>
-        <p></p>
+        <p class="blog-title">90 Day Fiancé's Most Lively Couples: Where Are They Now?</p>
+        <p class="categories">Category: Entertainment</p>
+        <div class="blog-body">
+          Ah, 90 Day Fiancé—the dumpster fire of a show that keeps fans wanting for more. With Season 7 being delayed due to...
+          <p class="readmore"><a href="https://screenrant.com/90-day-fiances-lively-couples-now/" target="_blank">Read more</a></p>
         </div>
+        <div class="viewmore"><a href="{{ url_for('samples') }}" target="_blank">View more samples</a></div>
 
-        <div class="readmore"><a href="https://screenrant.com/90-day-fiances-lively-couples-now/" target="_blank">Read more</a></div>
-        <div class="viewmore"><a href="{{ url_for('samples') }}" target="_blank">View more samples</a>  </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-box">
+    <div class="blog-image-box">
+      <a href="https://pixabay.com/photos/idea-light-bulb-creative-3310390/" target="_blank"><img src="/static/idea.jpg" class="blog-image"></a>
+    </div>
+
+    <div class="blog-description-box">
+      <div class="blog-description">
+
+        <p class="blog-title">5 Factors to Consider Before Hiring a Product Development Firm</p>
+        <p class="categories">Category: Business</p>
+        <div class="blog-body">
+          All the excellent products offered on the market today share one thing in common: before becoming a phenomenal hit, they...
+          <p class="readmore"><a href="https://docs.google.com/document/d/1j6772Ni-BmCo7gMCp89P6eaM6lDpoK2jH7nika-sYQ8/edit?usp=sharing" target="_blank">Read more</a></p>
+        </div>
+        <div class="viewmore"><a href="{{ url_for('samples') }}" target="_blank">View more samples</a></div>
+
       </div>
     </div>
   </div>
 
 
 
-  <div class="sample">
-    <div class="a">
-      <div class="imagecontainer"><img src="static/idea.jpg" width="300"></div>
-      <div class="sample-text">
-        <div><h2>5 Factors to Consider Before Hiring a Product Development Firm</h2></div>
 
-        <div class="p">
 
-          <div class="categories">Category: Business</div>
-
-          <p>
-            All the excellent products offered on the market today share one thing in common: before becoming a phenomenal hit, they underwent tremendous processes that came in various stages, including comprehensive research, in-depth analysis and rigorous tests...
-
-          </p>
-        <p></p>
-        </div>
-
-        <div class="readmore"><a href="https://docs.google.com/document/d/1LAWTJCoX4I9XJqyqpVs9RLMUmA3r7NQs_AQEtvTMOqk/edit?usp=sharing" target="_blank">Read more</a></div>
-        <div class="viewmore"><a href="{{ url_for('samples') }}" target="_blank">View more samples</a>  </div>
-      </div>
-    </div>
-  </div>
 </div>
+
+
+
+
 
 <div>
   {% with messages = get_flashed_messages() %}
