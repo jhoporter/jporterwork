@@ -46,6 +46,96 @@ ul {
 }
 
 
+/* Blog Page */
+
+
+.blog-container {
+  padding-top: 80px;
+  padding-bottom: 35px;
+  background-color: #FAFAFA;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.blog-box {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.blog-box > div {
+  width: 415px;
+  background-color: white;
+  border: 1px solid #DCDCDC;
+}
+
+.blog-image-box {
+  border-right: none !important;
+}
+
+.blog-image {
+  width: auto;
+  max-width: 100%;
+  height: 300px;
+}
+
+.blog-description-box {
+  border-left: none !important;
+  min-width: 380px;
+}
+
+.blog-description {
+  padding: 8%;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.admin {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.admin > div {
+  display: inline-block;
+}
+
+.admin-text {
+  position: relative;
+  top: 7px;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: top;
+}
+
+.admin-image {
+  width: auto;
+  max-width: 100%;
+  height: 40px;
+  opacity: 0.6;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.blog-title {
+  margin-bottom: 10px;
+  font-size: 170%;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.blog-body {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  color: black !important;
+  opacity: 0.7;
+}
+
+
 /* Contact Page */
 .contact-container {
   position: relative;
@@ -212,6 +302,16 @@ input[type=submit] {
   height: 100%;
   background-color: black;
   opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner2 {
+  position: relative;
+  height: 100%;
+  background-color: #729EA1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,6 +505,24 @@ input[type=submit] {
   }
 }
 
+@media screen and (max-width: 500px){
+  .blog-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .blog-box > div {
+    width: 100% !important;
+  }
+  .blog-image {
+    width: 100% !important;
+    height: auto;
+  }
+  .bannernote {
+    padding: 0;
+  }
+}
+
 
 @media screen and (max-width: 1017px) {
 
@@ -414,6 +532,10 @@ input[type=submit] {
   }
   .bannernote {
     font-size: 400% !important;
+    padding: 0;
+  }
+  .blog-description-box {
+    min-width: 300px;
   }
 }
 
@@ -435,7 +557,6 @@ input[type=submit] {
   }
   .bannernote {
     position: absolute;
-    left: 3%;
     padding-bottom: 0;
     margin-bottom: 0;
     font-size: 300% !important;
