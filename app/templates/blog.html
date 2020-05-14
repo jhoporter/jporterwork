@@ -8,6 +8,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 
 
       {% if title %}
@@ -20,21 +22,14 @@
 
     <body>
       <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
         <div class="topnav-left">Jho Porter Writes</div>
-        <div class="topnav-right">
-          <a href="{{ url_for('blog') }}">Home</a>
-        </div>
-
       </div>
 
 
-        <div class="banner">
+        <div class="banner2">
           <img src="/static/ban1d.jpg" class="bgimage">
             <div class="bannernote">
-              <div>Jho Porter Blog</div>
+              <div>Jho's Blog</div>
               <div id="description">
                 Thoughts, Facts And Other Stuff
               </div>
@@ -46,14 +41,39 @@
           </div>
         </div>
 
-        <div class="portfolio">
-          <div class="portfolio-text">
-                Blog
+
+
+
+        <div class="blog-container">
+          <div class="blog-box">
+            <div class="blog-image-box"><img src="/static/pizza.jpg" class="blog-image"></div>
+            <div class="blog-description-box">
+              <div class="blog-description">
+                <div class="admin">
+                  <div><img src="/static/admin.png" class="admin-image"></div>
+                  <div class="admin-text">
+                    <p>Admin</p>
+                    <p class="date">May 14</p>
+                  </div>
+                </div>
+                <p class="blog-title">Ordering Takeout in a Pandemic: A Guide</p>
+                <p class="blog-body">
+                  Since quarantine began several weeks ago, many people have expressed their concerns about ordering takeout. Is it safe? Is it ethical?
+                </p>
+
+
+
+              </div>
+            </div>
           </div>
-        </div>
 
 
         
+
+        </div>
+
+
+
 
 
 
