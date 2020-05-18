@@ -65,6 +65,12 @@ def contact():
 
 
 
+## BLOG ##
+@app.route('/ordering-takeout-in-a-pandemic')
+def ordering():
+    return render_template('blog-ordering-takeout.html', title='Ordering Takeout in a Pandemic')
+
+
 
 ## SAMPLES ##
 

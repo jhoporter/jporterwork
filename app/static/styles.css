@@ -47,6 +47,27 @@ ul {
 
 
 
+a {
+  text-decoration: none !important;
+  color: #800000;
+}
+
+a:hover {
+  font-size: 130%;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #800000;
+}
+
+a.active {
+  text-decoration: none;
+  color: #800000;
+}
+
+
+
 /* Blog Article */
 .article-container {
   width: 85%;
