@@ -67,3 +67,7 @@ def contact():
 
 
 ## SAMPLES ##
+
+@app.route('/hiring-product-development-firm')
+def hiringproduct():
+    return render_template('sample-hiring-product-development.html', title='Hiring A Product Development Firm')
