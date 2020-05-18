@@ -47,24 +47,40 @@ ul {
 
 
 
-a {
+a, a:hover, a:visited, a.active {
+  text-decoration: none !important;
+  color: black;
+}
+
+a:hover {
+  font-size: 110%;
+}
+
+
+
+
+
+
+.article-body a {
   text-decoration: none !important;
   color: #800000;
 }
 
-a:hover {
+.article-body a:hover {
   font-size: 130%;
 }
 
-a:visited {
+.article-body a:visited {
   text-decoration: none;
   color: #800000;
 }
 
-a.active {
+.article-body a.active {
   text-decoration: none;
   color: #800000;
 }
+
+
 
 
 
