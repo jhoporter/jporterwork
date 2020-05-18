@@ -17,12 +17,11 @@
 
 
     <body>
-      <div class="topnav" id="myTopnav">
-        <div class="topnav-left">Jho Porter Writes</div>
-        <div class="topnav-right">
+      <div class="blog-topnav">
+        <div class="blog-topnav-left" id="blog-name">Jho Porter Writes</div>
+        <div class="blog-topnav-right">
           <a href="{{ url_for('blog') }}">Home</a>
         </div>
-
       </div>
 
 
@@ -32,7 +31,7 @@
         <div class="navbackground"></div>
         {% block content %}{% endblock %}
 
-        
+
 
     </body>
     <footer>

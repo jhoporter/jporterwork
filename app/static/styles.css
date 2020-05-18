@@ -85,6 +85,15 @@ a:hover {
 
 
 /* Blog Article */
+.blog-topnav-right {
+  float: right;
+  padding-right: 40px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+}
+
 .article-container {
   width: 100%;
   margin: 0 auto;
@@ -731,6 +740,11 @@ input[type=submit] {
   #desc {
     display: block;
   }
+  .article {
+    width: 86%;
+    margin: 1px;
+    border: none;
+  }
 
 }
 
@@ -739,6 +753,7 @@ input[type=submit] {
   img {
     width: 250px;
   }
+
 }
 
 
@@ -747,7 +762,7 @@ input[type=submit] {
 /* NAVIGATION LAYOUT.HTML %/
 
 /* Add a black background color to the top navigation */
-.topnav {
+.topnav, .blog-topnav {
   top: 0;
   left: 0;
   width: 100%;
@@ -759,7 +774,7 @@ input[type=submit] {
 }
 
 
-.topnav-right {
+.topnav-right, .blog-topnav-right {
   float: right;
   padding-right: 40px;
   padding-top: 5px;
@@ -768,7 +783,12 @@ input[type=submit] {
   font-weight: bold;
 }
 
-.topnav-left {
+.blog-topnav-right {
+  padding-right: 10px !important;
+  float: none !important;
+}
+
+.topnav-left, .blog-topnav-left {
   float: left;
   padding-left: 10px;
   padding-top: 10px;
@@ -779,11 +799,10 @@ input[type=submit] {
   letter-spacing: 2px;
   /*font-family: 'Anton', sans-serif;*/
   font-family: 'Dancing Script', cursive;
-
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a, .blog-topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -794,14 +813,19 @@ input[type=submit] {
   font-size: 17px;
 }
 
+.blog-topnav a {
+  margin-right: 5px !important;
+  float: right;
+}
+
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover, .blog-topnav a:hover {
   background-color: white;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+.topnav a.active, .blog-topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
@@ -817,6 +841,7 @@ input[type=submit] {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {
   .topnav a {display: none;}
+  #homedisplay {display: block}
   .topnav-left {font-size: 200%; margin-top: 8px;}
   .topnav a.icon {
     margin-top: 10px;
