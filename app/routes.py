@@ -77,3 +77,27 @@ def ordering():
 @app.route('/hiring-product-development-firm')
 def hiringproduct():
     return render_template('sample-hiring-product-development.html', title='Hiring A Product Development Firm')
+
+
+@app.route('/maximizing-the-effects-of-caffeine')
+def coffee():
+    return render_template('sample-maximizing-the-effects.html', title="Maximizing the Effects of Caffeine")
+
+
+@app.route('/productivity-hacks')
+def productivity():
+    return render_template('sample-productivity-hacks.html', title="Productivity Hacks")
+
+
+@app.route('/yamaha-hs7-review')
+def yamaha():
+    return render_template('sample-yamaha-hs7-review.html', title="Yamaha HS7 Review")
+
+
+@app.route('/parcel-pending-press-release')
+def parcel():
+    return render_template('sample-parcel-pending.html', title="Parcel Pending Press Release")
+
+@app.route('/wean-your-baby-with-fruits-and-vegetables')
+def wean():
+    return  render_template('sample-wean-your-baby.html', title="Wean Your Baby with Fruits and Vegetables")
