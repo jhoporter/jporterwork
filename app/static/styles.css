@@ -146,12 +146,25 @@ a:hover {
   margin-bottom: 6%;
 }
 
+.image-container {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  opacity: 0.6;
+  font-size: 80%;
+}
+
 
 .article-image {
   width: 100%;
   max-width: 100%;
-
 }
+
 
 .article-body {
   padding-top: 30px;
