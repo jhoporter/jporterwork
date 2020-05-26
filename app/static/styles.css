@@ -184,6 +184,10 @@ a:hover {
 
 /* Blog Page */
 
+.posts {
+  padding: 1%;
+}
+
 
 .blog-container {
   background-color: #FAFAFA;
@@ -312,7 +316,7 @@ a:hover {
   font-size: 240%;
   color: black;
   text-align: center;
-  padding-top: 3%;
+  padding: 2%;
   background-color: #FAFAFA;
   font-family: 'Anton', sans-serif;
   opacity: 0.8;
@@ -520,7 +524,7 @@ input[type=submit] {
 }
 
 .portfolio-text {
-  padding: 5%;
+  padding: 2%;
   width: auto;
   text-align: center;
   margin: auto;
@@ -671,6 +675,9 @@ input[type=submit] {
   }
   .navbackground {
     padding-bottom: 3%;
+  }
+  .posts {
+    padding: 0;
   }
 }
 
