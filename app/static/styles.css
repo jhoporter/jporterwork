@@ -53,7 +53,7 @@ a, a:hover, a:visited, a.active {
 }
 
 a:hover {
-  font-size: 110%;
+  color: #2E9AFE;
 }
 
 
@@ -63,21 +63,21 @@ a:hover {
 
 .article-body a {
   text-decoration: none !important;
-  color: #800000;
+  color: #2E9AFE;
 }
 
 .article-body a:hover {
-  font-size: 130%;
+  color: #2E9AFE;
 }
 
 .article-body a:visited {
   text-decoration: none;
-  color: #800000;
+  color: #2E9AFE;
 }
 
 .article-body a.active {
   text-decoration: none;
-  color: #800000;
+  color: #2E9AFE;
 }
 
 
@@ -184,13 +184,17 @@ a:hover {
 
 /* Blog Page */
 
+.posts {
+  padding: 1%;
+}
+
 
 .blog-container {
-  padding-top: 3%;
   background-color: #FAFAFA;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 0;
 }
 
 
@@ -198,7 +202,7 @@ a:hover {
   display: flex;
   width: 65%;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 2%;
 }
 
 .blog-box > div {
@@ -302,7 +306,7 @@ a:hover {
 
 /* Samples Page */
 .navbackground {
-  height: 60px;
+  height: 8.5%;
   background-color: #333;
   font-size: 300%;
   position: relative;
@@ -312,7 +316,7 @@ a:hover {
   font-size: 240%;
   color: black;
   text-align: center;
-  padding-top: 3%;
+  padding: 2%;
   background-color: #FAFAFA;
   font-family: 'Anton', sans-serif;
   opacity: 0.8;
@@ -320,14 +324,14 @@ a:hover {
 
 
 /* Contact Form */
-
 .contact-index {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   position: relative;
   background-color: none;
   height: 70%;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .summary {
@@ -356,6 +360,10 @@ a:hover {
   margin-top: 20px;
 }
 
+
+.contact-form {
+  margin-bottom: 5%;
+}
 
 .contact-text {
   color: #333;
@@ -509,14 +517,14 @@ input[type=submit] {
   position: relative;
   background-color: #FAFAFA;
   color: white;
-  height: 89px;
+  height: auto;
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .portfolio-text {
-  padding-top: 24px;
+  padding: 2%;
   width: auto;
   text-align: center;
   margin: auto;
@@ -525,7 +533,6 @@ input[type=submit] {
   color: #333;
   letter-spacing: 2px;
   font-family: 'Anton', sans-serif;
-  padding-bottom: 0;
 }
 
 /* SAMPLES */
@@ -598,7 +605,7 @@ input[type=submit] {
 }
 
 .readmore a:hover {
-  font-size: 130%;
+  color: #2E9AFE !important;
 }
 
 .readmore a:visited {
@@ -617,7 +624,7 @@ input[type=submit] {
 }
 
 .viewmore a:hover {
-  font-size: 130%;
+  color: #2E9AFE !important;
 }
 
 .viewmore a:visited {
@@ -654,6 +661,7 @@ input[type=submit] {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 0;
   }
   .blog-box > div {
     width: 100% !important;
@@ -663,6 +671,12 @@ input[type=submit] {
     height: auto;
   }
   .bannernote {
+    padding: 0;
+  }
+  .navbackground {
+    padding-bottom: 3%;
+  }
+  .posts {
     padding: 0;
   }
 }
@@ -726,6 +740,7 @@ input[type=submit] {
   }
   .contact-index {
     flex-wrap: wrap;
+    margin-bottom: 10%;
   }
   .contact-index > div {
     width: 100%;
