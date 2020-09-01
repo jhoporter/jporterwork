@@ -73,6 +73,9 @@ def ordering():
 
 
 ## SAMPLES ##
+@app.route('/generate-passive-income')
+def generatepassive():
+    return render_template('sample-generate-passive-income.html', title="Generating Passive Income Through Continuity Marketing")
 
 @app.route('/hiring-product-development-firm')
 def hiringproduct():
