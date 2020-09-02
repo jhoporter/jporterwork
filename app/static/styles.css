@@ -537,6 +537,10 @@ input[type=submit] {
 
 /* SAMPLES */
 
+ul.article-list > li {
+  list-style-type: disc !important;
+  margin-left: 50px;
+}
 
 .imagecontainer {
   position: relative;

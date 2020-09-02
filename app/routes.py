@@ -73,6 +73,11 @@ def ordering():
 
 
 ## SAMPLES ##
+@app.route('/things-to-do-quarantine')
+def tabletop():
+    return render_template('sample-tabletop.html', title="Running Out Of Things To Do In Quarantine")
+
+
 @app.route('/generate-passive-income')
 def generatepassive():
     return render_template('sample-generate-passive-income.html', title="Generating Passive Income Through Continuity Marketing")
