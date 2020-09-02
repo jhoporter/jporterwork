@@ -542,6 +542,14 @@ ul.article-list > li {
   margin-left: 50px;
 }
 
+.article-image-div {
+  text-align: center;
+}
+
+.in-article-image {
+  padding-bottom: 25px;
+}
+
 .imagecontainer {
   position: relative;
   text-align: center;
@@ -701,6 +709,14 @@ ul.article-list > li {
   }
   .viewmore {
     margin-top: 10px;
+  }
+  .article-image-div {
+    width: 100%;
+  }
+  .in-article-image {
+    width: 100%;
+    height: auto;
+    padding-bottom: 25px;
   }
 }
 
